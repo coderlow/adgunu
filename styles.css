@@ -1,0 +1,139 @@
+/* Основные стили для всего документа */
+body {
+    font-family: 'Poppins', sans-serif; /* Шрифт для всего текста на странице */
+    background-color: #fff; /* Основной фон страницы */
+    color: #333; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/confetti.png'); /* Фоновое изображение с двумя слоями */
+    background-size: cover, 200px 200px; /* Размер фонового изображения */
+    background-repeat: no-repeat, repeat; /* Настройки повторения фонового изображения */
+}
+
+/* Контейнер для центрального контента */
+.container {
+    max-width: 900px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 20px; /* Внутренние отступы */
+}
+
+/* Стили для верхнего заголовка */
+.header {
+    background-color: #6a1b9a; /* Цвет фона заголовка */
+    color: white; /* Цвет текста в заголовке */
+    padding: 20px 0; /* Внутренние отступы */
+    border-bottom: 5px solid #6a1b9a; /* Нижняя граница заголовка */
+}
+
+/* Стили для текста заголовка */
+.header h1 {
+    margin: 0; /* Убираем отступы вокруг заголовка */
+    font-size: 36px; /* Размер шрифта заголовка */
+    font-family: 'Poppins', sans-serif; /* Шрифт заголовка */
+}
+
+/* Стили для блока обратного отсчета */
+.countdown {
+    font-size: 28px; /* Размер шрифта для отсчета */
+    font-weight: bold; /* Жирное начертание шрифта */
+    color: #6a1b9a; /* Цвет текста */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    padding: 20px; /* Внутренние отступы */
+    border: 2px solid #6a1b9a; /* Граница блока отсчета */
+    border-radius: 10px; /* Скругление углов */
+    background-color: #fff; /* Цвет фона блока отсчета */
+    display: inline-block; /* Отображение в строке */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Тень блока */
+    position: relative; /* Относительное позиционирование */
+    overflow: hidden; /* Скрытие содержимого, выходящего за пределы блока */
+}
+
+/* Стили для отдельных частей отсчета времени */
+.countdown span {
+    display: inline-block; /* Отображение в строке */
+    padding: 10px; /* Внутренние отступы */
+    margin: 0 5px; /* Отступы между элементами */
+    border: 2px solid #6a1b9a; /* Граница для каждого элемента */
+    border-radius: 5px; /* Скругление углов */
+    background-color: #f3e5f5; /* Цвет фона */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для анимации */
+    font-family: 'Poppins', sans-serif; /* Шрифт */
+}
+
+/* Стили для эффекта наведения на элементы отсчета */
+.countdown span:hover {
+    transform: scale(1.1); /* Увеличение элемента при наведении */
+    background-color: #e1bee7; /* Изменение цвета фона при наведении */
+}
+
+/* Цвета границ для различных частей отсчета */
+.countdown .days { border-color: #d32f2f; }
+.countdown .hours { border-color: #1976d2; }
+.countdown .minutes { border-color: #388e3c; }
+.countdown .seconds { border-color: #fbc02d;}
+
+/* Размер шрифта для эмодзи в блоке отсчета */
+.countdown .emoji { font-size: 32px; }
+
+/* Стили для нижнего колонтитула */
+.footer {
+    background-color: #6a1b9a; /* Цвет фона нижнего колонтитула */
+    color: white; /* Цвет текста */
+    padding: 10px 0; /* Внутренние отступы */
+    margin-top: 20px; /* Отступ сверху */
+    font-family: 'Poppins', sans-serif; /* Шрифт */
+}
+
+/* Стили для текста в нижнем колонтитуле */
+.footer p {
+    margin: 0; /* Убираем отступы вокруг текста */
+}
+
+/* Стили для кнопок */
+.buttons {
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Стили для каждой кнопки */
+.buttons button {
+    background-color: #6a1b9a; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 15px 25px; /* Внутренние отступы */
+    font-size: 18px; /* Размер шрифта */
+    margin: 10px; /* Отступы вокруг кнопки */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для изменений */
+    font-family: 'Poppins', sans-serif; /* Шрифт */
+}
+
+/* Эффект наведения на кнопку */
+.buttons button:hover {
+    background-color: #4a0072; /* Изменение цвета фона при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Стили для блока ответа */
+.response {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 20px; /* Внутренние отступы */
+    font-size: 20px; /* Размер шрифта */
+    border-radius: 10px; /* Скругление углов */
+    display: none; /* Скрытие блока по умолчанию */
+    font-family: 'Poppins', sans-serif; /* Шрифт */
+}
+
+/* Стили для блока ответа "Тема" */
+.response.thank-you {
+    background-color: #dff0d8; /* Цвет фона блока */
+    color: #3c763d; /* Цвет текста */
+}
+
+/* Стили для блока ответа "Не тема" */
+.response.not-thank-you {
+    background-color: #f2dede; /* Цвет фона блока */
+    color: #a94442; /* Цвет текста */
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günü</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Doğum gününümə az qaldı!</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="countdown" id="countdown">
+            <span class="days emoji">📅 <span id="days"></span> gün</span>
+            <span class="hours emoji">🕒 <span id="hours"></span> saat</span>
+            <span class="minutes emoji">⌛ <span id="minutes"></span> dəq</span>
+            <span class="seconds emoji">⏳ <span id="seconds"></span> saniyə</span>
+        </div>
+
+        <div class="buttons">
+            <button onclick="showResponse('thank-you')"><span>🎉 Təbrik Edirəm!</span></button>
+            <button onclick="showResponse('not-thank-you')"><span>👎 Təbrik Etmirəm!</span></button>
+        </div>
+
+        <div class="response thank-you" id="thank-you-response">
+            🎉 <strong>Təşəkkür edirəm!</strong> Təbriklərinizi eşitmək mənə çox xoşdur! 🎂🥳
+        </div>
+        <div class="response not-thank-you" id="not-thank-you-response">
+            😕 <strong>Heç olmasa quru söznən təbrik edərdin</strong> 🙁
+        </div>
+        
+       
+    </div>
+    <div class="footer">
+        <p>&copy;     Bu sayt @coderlow tərəfindən hazırlanmışdır.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
